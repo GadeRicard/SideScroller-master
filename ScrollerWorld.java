@@ -45,7 +45,7 @@ public class ScrollerWorld extends World
         
         
         //Add Hero object to the world
-        addObject( new Hero(), 30, getHeight() - 30);
+        addObject( new Hero(), 30, getHeight() -60);
     }
     
     /**
@@ -56,12 +56,13 @@ public class ScrollerWorld extends World
      */
     public void act()
     {
+        
         if( Greenfoot.isKeyDown("right") )
         {
             if( platformCounter >= 25)
             {
-                platformCounter = 0;
-                addObject( new Platform(), getWidth()-25, getHeight()-8);
+                    platformCounter = 0;
+                    addObject( new Platform(), getWidth()-25, getHeight()-8);
             }
             platformCounter = platformCounter + 1;
         }
@@ -71,6 +72,12 @@ public class ScrollerWorld extends World
         {
             addObject( new Enemy(), 599, getHeight()-27);
         }
+        else if(Greenfoot.getRandomNumber(255) < 1)
+        {
+            addObject(new Mushroom(), 599, getHeight()-27);
+        }
+        
+        displayScore();
     }
     
     /**
@@ -84,6 +91,8 @@ public class ScrollerWorld extends World
         Greenfoot.stop();
     }
     
+
+    
     /**
      * displayScore shows the player's current score in the top right of the world
      * @param there are no parameters
@@ -92,9 +101,9 @@ public class ScrollerWorld extends World
     private void displayScore()
     {
         showText("Score: " + score, 50, 25);
-    }
+    } 
     
-    /**
+        /**
      * addToScore adds 1 to the player's score
      * @param there are no parameters
      * @return there is no return type

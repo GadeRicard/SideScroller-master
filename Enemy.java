@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Enemy extends Actor
 {
     // Add imageCounter variable here
-    private int imageCounter = 3;
+    private int imageCounter = 6;
     
     /**
      * Changes the scale of the Enemy object
@@ -37,7 +37,7 @@ public class Enemy extends Actor
          * set imageCounter to 0. Otherwise, increase the imageCounter by 1.
          */
         GreenfootImage image1 = new GreenfootImage("Goomba.png");
-        if( imageCounter >= 3)
+        if( imageCounter >= 6)
         {
             image1.mirrorHorizontally();
             imageCounter = 0;

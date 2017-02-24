@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Fireball
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Fireball\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=h
+comment1.target=Fireball(Hero)
+comment1.text=\r\n\ Fireball\ controls\ the\ changes\ to\ the\ Fireball\ objects\ image\ and\ links\ a\ variable\ to\ the\ Hero\ class\r\n\ @param\ The\ parameter\ is\ the\ Hero\ class\r\n\ @return\ the\ return\ type\ is\ the\ Fireball\ class\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Fireball\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ checkCollisionAndMovement()
+comment3.text=\r\n\ checkCollisionAndMovement\ controls\ the\ reactions\ the\ Fireball\ object\ has\ to\ contacting\ other\ actors\r\n\ and\ controls\ the\ movement\ of\ the\ Fireball\ object\r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ there\ is\ no\ return\ type\r\n
+comment4.params=
+comment4.target=void\ delete()
+comment4.text=\r\n\ The\ delete\ method\ deletes\ the\ Fireball\ object\ when\ called\r\n\ @param\ there\ are\ no\ parameters\r\n\ @return\ there\ is\ no\ return\ type\r\n
+numComments=5
